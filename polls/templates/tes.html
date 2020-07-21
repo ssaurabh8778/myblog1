@@ -1,0 +1,46 @@
+{% extends "layout.html"%}
+{% block content %} 
+
+
+
+<div>
+
+<table class='c5'>
+
+<tr>
+<td class='c8'>Product Code</td>
+<td class='c8'>Category</td>
+<td class='c8'>Pattern</td>
+<td class='c8'>Size</td>
+<td class='c8'>PR</td>
+<td class='c8'>Construction</td>
+<td class='c8'>Load Range</td>
+<td class='c8'>Filled By</td>
+</tr>
+
+<tr>
+<td class='c9'>12345</td>
+<td class='c9'>OTR</td>
+<td class='c9'>VEM ROCK</td>
+<td class='c9'>12.00-20</td>
+<td class='c9'>18</td>
+<td class='c9'>8+2B</td>
+<td class='c9'>-</td>
+<td class='c9'>SS1</td>
+</tr>
+
+{% for row in s1 %}
+<tr>
+{% for column in row %}
+{% if loop.index <= 9 and loop.index >=2 %}
+<td class='c9'>{{column}}</td>
+{% endif %}
+{% endfor %}
+</tr>
+{% endfor %}
+<tr>
+</tr>
+</table>
+</div>
+
+{% endblock content %}
