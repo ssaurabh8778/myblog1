@@ -8,7 +8,8 @@ def index(request):
     return render(request,'polls/welcome.html')
 
 conn = pyodbc.connect(
-    r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=polls/DATABASE.mdb;')
+    r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
+    r'DBQ=polls/DATABASE.mdb;')
 cursor = conn.cursor()
 cursor.execute('select * from DATA1')
 
