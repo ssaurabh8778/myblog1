@@ -2,7 +2,8 @@
  
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle.css')}}">  
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/mystyle.css' %}">
 <title>Hello World Template</title>
 </head>
 <body class='b1'>
@@ -19,10 +20,10 @@ TIRE INFORMATION MANAGEMENT SYSTEM
 <table class='c5'>
 
 <tr>
-<td class='c4'> <a href="tes" class='c3'> Total Filled </a></td>
-<td class='c4'> <a href="home" class='c3' > To Be Approved</a></td>
-<td class='c4'><a href="home" class='c3' >Data Filling Interface</a></td>
-<td class='c4'><a href="home" class='c3' >Design Calculationse</a></td> 
+<td class='c4'> <a href="total_filled1" class='c3'> Total Filled </a></td>
+<td class='c4'> <a href="testing1" class='c3' > To Be Approved</a></td>
+<td class='c4'><a href="data_interface1" class='c3' >Data Filling Interface</a></td>
+<td class='c4'><a href="testing_data1" class='c3' >Testing Data</a></td>
 </tr>
 `
 <tr>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>  
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load staticfiles %}
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+<head>  
+  <title>Bootstrap Example</title>  
+
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body {  
+      position: relative;   
+  }  
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #808080;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}  
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}  
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}  
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}  
+  </style>  
+</head>  
+<body data-spy="scroll" data-target=".navbar" data-offset="50">  
+  
+<nav class="navbar navbar-inverse navbar-fixed-top">  
+  <div class="container-fluid">  
+    <div class="navbar-header">  
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">  
+          <span class="icon-bar"></span>  
+          <span class="icon-bar"></span>  
+          <span class="icon-bar"></span>                          
+      </button>  
+      <a class="navbar-brand" href="#">Data Filling Interface</a>
+    </div>  
+    <div>  
+      <div class="collapse navbar-collapse" id="myNavbar">  
+        <ul class="nav navbar-nav">  
+          <li><a href="#section1">TES</a></li>
+          <li><a href="#section2">Layout</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PRQS & PDQG<span class="caret"></span></a>
+            <ul class="dropdown-menu">  
+              <li><a href="#section41">PRQS</a></li>
+              <li><a href="#section42">PDQG</a></li>
+            </ul>  
+          </li>
+          <li><a href="#section3">Other Details</a></li>
+        </ul>  
+      </div>  
+    </div>  
+  </div>  
+</nav>      
+  
+<div id="section1" class="container-fluid">
+  <h1>TES</h1>
+
+     <form action="/save" method="post">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>  
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>  
+</div>  
+<div id="section2" class="container-fluid">  
+  <h1>Section 2</h1>
+
+<div class="container">
+  <h1>Basic Table Example</h1>
+
+<table class="table">
+  <tr><th>Id</th><th>Name</th><th>Age</th></tr>
+  <tr><td>101</td><td>Rahul</td><td>23</td></tr>
+  <tr><td>102</td><td>Umesh</td><td>22</td></tr>
+  <tr><td>103</td><td>Max</td><td>29</td></tr>
+  <tr><td>104</td><td>Ajeet</td><td>21</td></tr>
+</table>
+
+</div>
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>  
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>  
+</div>  
+<div id="section3" class="container-fluid">  
+  <h1>Section 3</h1>
+
+      <form>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>  
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>  
+</div>  
+<div id="section41" class="container-fluid">  
+
+<div id="Book1_20948" align=center >
+
+  <TABLE>
+
+           <tr>
+  <td colspan=6 class=xl6320948 ><input type="text" name="fname" SIZE="186" value="GREEN COMPONENTS" ></td>
+ </tr>
+
+     <tr>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="30" value="ITEM" ></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20" value="NOS"></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20" value="FABRIC"></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20" value="COMPOUND"></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20" value="GAUGE"></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="50" value="REMARKS"></td>
+ </tr>
+
+ <tr>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="30" value="INNER PLIES" ></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="50"/></td>
+ </tr>
+
+   <tr>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="30" value="FLOATING PLIES" ></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="50"/></td>
+ </tr>
+
+   <tr>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="30" value="OUTER PLIES" ></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="50"/></td>
+ </tr>
+
+   <tr>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="30" value="BREAKER" ></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="50"/></td>
+ </tr>
+
+   <tr>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="30" value="FABRIC CHAFER" ></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="50"/></td>
+ </tr>\
+
+   <tr>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="30" value="RUBBER CHAFER" ></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="20"/></td>
+  <td class=xl6320948 ><input type="text" name="fname" SIZE="50"/></td>
+ </tr>\
+
+        <tr>
+</div>
+</div>
+<div id="section42" class="container-fluid">  
+  <h1>Section 4 Submenu 2</h1>  
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>  
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>  
+</div>  
+  
+</body>  
+</html>  
