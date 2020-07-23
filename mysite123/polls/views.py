@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+import sqlite3
 # Create your views here.
 from django.shortcuts import render
 import pyodbc
@@ -7,10 +7,9 @@ import pyodbc
 def index(request):
     return render(request,'polls/welcome.html')
 
-conn = pyodbc.connect(
-    r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=polls/DATABASE.mdb;')
+conn = sqlite3.connect('/home/ssaurabh8778/ssaurabh8778.pythonanywhere.com/mysite123/polls/data.sqlite')
 cursor = conn.cursor()
-cursor.execute('select * from DATA1')
+cursor.execute('')
 
 s1 = cursor.fetchall()
 
