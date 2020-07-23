@@ -7,7 +7,7 @@ import pyodbc
 def index(request):
     return render(request,'polls/welcome.html')
 
-conn = sqlite3.connect('polls/data1.sqlite')
+conn = sqlite3.connect('polls/data.sqlite')
 cursor = conn.cursor()
 cursor.execute('select * from DATA1')
 
