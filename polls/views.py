@@ -6,7 +6,7 @@ from django.shortcuts import render
 def index(request):
     return render(request,'polls/welcome.html')
 
-conn = sqlite3.connect('polls/data.sqlite')
+conn = sqlite3.connect('/polls/data.sqlite')
 cursor = conn.cursor()
 cursor.execute('select * from DATA1')
 
