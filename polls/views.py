@@ -2,7 +2,6 @@ from django.shortcuts import render
 import sqlite3
 # Create your views here.
 from django.shortcuts import render
-import pyodbc
 
 def index(request):
     return render(request,'polls/welcome.html')
