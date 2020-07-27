@@ -25,7 +25,7 @@ SECRET_KEY = '@!+d1(f1w7n+j3#oz%lp*wxz=v01z8whlb1geq7g!xhyf#0s6^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ssaurabh8778.pythonanywhere.com']
 
 
 # Application definition
@@ -135,3 +135,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.messages.context_processors.messages",
     'django.core.context_processors.request',
 )
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
