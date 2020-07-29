@@ -118,7 +118,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/home/ssaurabh8778/ssaurabh8778.pythonanywhere.com/polls/static/'
 
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'templates'),
@@ -136,5 +136,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
 )
 MEDIA_URL = '/media/'
-STATIC_ROOT = "/home/ssaurabh8778/ssaurabh8778.pythonanywhere.com/polls/static"
+STATIC_ROOT = '/home/ssaurabh8778/ssaurabh8778.pythonanywhere.com/polls/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
