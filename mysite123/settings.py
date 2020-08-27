@@ -138,7 +138,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 MEDIA_URL = '/media/'
 
-'''STATIC_ROOT = '/home/ssaurabh8778/ssaurabh8778.pythonanywhere.com/polls/static'''
+STATIC_ROOT = '/home/ssaurabh8778/ssaurabh8778.pythonanywhere.com/static'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
