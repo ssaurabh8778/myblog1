@@ -39,7 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'polls',
     'rezume',
-    'home'
+    'home',
+    'rest_framework',
+    'quickstart',
+    'corsheaders',
+    'api',
+    'tkphapi'
 ]
 
 MIDDLEWARE = [
