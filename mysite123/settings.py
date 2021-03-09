@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'rezume',
     'home',
     'corsheaders',
-    'api',
     'tkphapi'
 ]
 
