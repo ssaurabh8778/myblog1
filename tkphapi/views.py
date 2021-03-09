@@ -2,7 +2,6 @@ from django.http import JsonResponse
 import sqlite3
 import pandas as pd
 import json
-from rest_framework.parsers import JSONParser
 
 
 def check(request):

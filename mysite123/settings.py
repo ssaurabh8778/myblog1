@@ -40,8 +40,6 @@ INSTALLED_APPS = [
     'polls',
     'rezume',
     'home',
-    'rest_framework',
-    'quickstart',
     'corsheaders',
     'api',
     'tkphapi'
