@@ -21,5 +21,6 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     path('rezume/', include('rezume.urls')),
+    path('tkphapi/', include('tkphapi.urls')),
 ]
 
