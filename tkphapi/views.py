@@ -2,7 +2,7 @@ from django.http import JsonResponse
 import sqlite3
 import pandas as pd
 import json
-
+from rest_framework.parsers import JSONParser
 
 def check(request):
     data = {
@@ -36,6 +36,7 @@ def allrecords(request):
                                "basic_site_tkph_rear", "real_site_tkph_front", "real_site_tkph_rear", "uploaded"
                                ])
     print(rs)
+    con.close()
 
     js = rs.to_json()
     ps = json.loads(js)
@@ -62,7 +63,7 @@ def insertrecords(request):
     values = list(data.values())
 
     cursorObj.execute(
-        'insert into items ("date_stamp","date","mine_details","tyre_size","max_amb_temp","cycle_length","cycle_duration","vehicle_make","vehicle_model","empty_vehicle_weight","pay_load","weight_correction","load_dist_front_unloaded","load_dist_rear_unloaded","load_dist_front_loaded","load_dist_rear_loaded","added_by","distance_km_per_hour","gross_vehicle_weight","k1_dist_coefficient","k2_temp_coefficient","avg_tyre_load_front","avg_tyre_load_rear","basic_site_tkph_front","basic_site_tkph_rear","real_site_tkph_front","real_site_tkph_rear","uploaded") values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+        'insert or replace into items ("date_stamp","date","mine_details","tyre_size","max_amb_temp","cycle_length","cycle_duration","vehicle_make","vehicle_model","empty_vehicle_weight","pay_load","weight_correction","load_dist_front_unloaded","load_dist_rear_unloaded","load_dist_front_loaded","load_dist_rear_loaded","added_by","distance_km_per_hour","gross_vehicle_weight","k1_dist_coefficient","k2_temp_coefficient","avg_tyre_load_front","avg_tyre_load_rear","basic_site_tkph_front","basic_site_tkph_rear","real_site_tkph_front","real_site_tkph_rear","uploaded") values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
         values)
 
     con.commit()
@@ -78,7 +79,10 @@ def insertrecords(request):
                                "avg_tyre_load_front", "avg_tyre_load_rear", "basic_site_tkph_front",
                                "basic_site_tkph_rear", "real_site_tkph_front", "real_site_tkph_rear", "uploaded"
                                ])
+
+
     print(rs)
+    con.close()
 
     js = rs.to_json()
     ps = json.loads(js)
