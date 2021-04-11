@@ -18,7 +18,7 @@ def allrecords(request):
     cursorObj.execute(
         "create table if not exists items (date_stamp TEXT primary key not null, date TEXT,customer TEXT,project TEXT, state TEXT,district TEXT,siteAddress TEXT,otherDetails TEXT,tyre_size TEXT,max_amb_temp TEXT,cycle_length TEXT,cycle_duration TEXT,vehicle_make TEXT,vehicle_model TEXT,empty_vehicle_weight TEXT,pay_load TEXT,weight_correction TEXT,load_dist_front_unloaded TEXT,load_dist_rear_unloaded TEXT,load_dist_front_loaded TEXT,load_dist_rear_loaded TEXT,added_by TEXT,distance_km_per_hour TEXT,gross_vehicle_weight TEXT,k1_dist_coefficient TEXT,k2_temp_coefficient TEXT,avg_tyre_load_front TEXT,avg_tyre_load_rear TEXT,basic_site_tkph_front TEXT,basic_site_tkph_rear TEXT,real_site_tkph_front TEXT,real_site_tkph_rear TEXT, uploaded BOOL);")
 
-    values = [1614614604236, "2021-03-01T16:03:24.222Z", "", "18.00-33", "", 8, "", "CAT", "773B", 39396, 53977.5, "",
+    values = [1614614604236, "2021-03-01T16:03:24.222Z", "", "", "", "", "", "", "18.00-33", "", 8, "", "CAT", "773B", 39396, 53977.5, "",
               47.3, 52.7, 33.300000000000004, 66.7, "saurabh", "null", 93373.5, 1.09, "null", 12431.920875,
               10380.227062500002, "null", "null", "null", "null", "null"];
 
